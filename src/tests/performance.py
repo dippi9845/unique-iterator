@@ -1,5 +1,5 @@
 from time import time
-from ..unique_iterator.unique_iterator import Unique
+from unique_iterator import Unique
 import numpy as np
 from collections import Counter
 from random import randint
