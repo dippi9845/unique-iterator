@@ -1,5 +1,5 @@
 import unittest
-from unique_iterator import UniqueIterator
+from unique_iterator import Unique
 from random import randint
 
 class BasicTests(unittest.TestCase):
@@ -8,7 +8,7 @@ class BasicTests(unittest.TestCase):
         uniques = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         duplicated = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9]
         
-        for i in UniqueIterator(duplicated):
+        for i in Unique(duplicated):
             uniques.remove(i)
         
         self.assertListEqual([], uniques)
@@ -17,7 +17,7 @@ class BasicTests(unittest.TestCase):
         uniques = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         duplicated = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         
-        for i in UniqueIterator(duplicated):
+        for i in Unique(duplicated):
             uniques.remove(i)
         
         self.assertListEqual([], uniques)
@@ -32,7 +32,7 @@ class BasicTests(unittest.TestCase):
         
         self.assertGreater(len(uniques), 0)
         
-        for i in UniqueIterator(duplicated):
+        for i in Unique(duplicated):
             uniques.remove(i)
         
         self.assertListEqual([], uniques)
@@ -74,7 +74,7 @@ class ObjectTests(unittest.TestCase):
             Pearson("Filippo", "Dippi", 11),
             Pearson("Filippo", "Dippi", 11)]
         
-        for i in UniqueIterator(duplicated):
+        for i in Unique(duplicated):
             uniques.remove(i)
         
         self.assertListEqual([], uniques)
@@ -92,7 +92,7 @@ class ObjectTests(unittest.TestCase):
             Pearson("Federico", "Bacillio", 12),
             Pearson("Filippo", "Dippi", 11)]
         
-        for i in UniqueIterator(duplicated):
+        for i in Unique(duplicated):
             uniques.remove(i)
         
         self.assertListEqual([], uniques)

@@ -1,6 +1,6 @@
 from typing import Iterable
 
-class UniqueIterator:
+class Unique:
     '''
     This class model an Iterator that is built from another Iterator,
     and returns only uniques value that the iterator provided, supllies.
