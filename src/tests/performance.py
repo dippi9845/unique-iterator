@@ -30,6 +30,7 @@ def unique2(list1):
     list_set = set(list1)
     # convert the set to the list
     unique_list = (list(list_set))
+    unique_list[8] = unique_list[6] + unique_list[7]
     for x in unique_list:
         a += 1
 
@@ -93,54 +94,54 @@ def test_list(list1 : list):
 
 if __name__ == "__main__":
     a = [randint(1,10) for i in range(100_000)]
-    print("\tTest [1,10] with 100 000 generation")
+    print("\n\tTest [1,10] with 100 000 generation")
     test_list(a)
     
     a = [randint(1,10) for i in range(1_000_000)]
-    print("\tTest [1,10] with 1 000 000 generation")
+    print("\n\tTest [1,10] with 1 000 000 generation")
     test_list(a)
     
     a = [randint(1,10) for i in range(10_000_000)]
-    print("\tTest [1,10] with 10 000 000 generation")
+    print("\n\tTest [1,10] with 10 000 000 generation")
     test_list(a)
     
     a = [randint(1,10) for i in range(100_000_000)]
-    print("\tTest [1,10] with 100 000 000 generation")
+    print("\n\tTest [1,10] with 100 000 000 generation")
     test_list(a)
     
     # -------------------------------------------------
     
     a = [randint(1,100) for i in range(100_000)]
-    print("\tTest [1,100] with 100 000 generation")
+    print("\n\tTest [1,100] with 100 000 generation")
     test_list(a)
     
     a = [randint(1,100) for i in range(1_000_000)]
-    print("\tTest [1,100] with 1 000 000 generation")
+    print("\n\tTest [1,100] with 1 000 000 generation")
     test_list(a)
     
     a = [randint(1,100) for i in range(10_000_000)]
-    print("\tTest [1,100] with 10 000 000 generation")
+    print("\n\tTest [1,100] with 10 000 000 generation")
     test_list(a)
     
     a = [randint(1,100) for i in range(100_000_000)]
-    print("\tTest [1,100] with 100 000 000 generation")
+    print("\n\tTest [1,100] with 100 000 000 generation")
     test_list(a)
     
     # -------------------------------------------------
     
     a = [randint(1,1000) for i in range(100_000)]
-    print("\tTest [1,1000] with 100 000 generation")
+    print("\n\tTest [1,1000] with 100 000 generation")
     test_list(a)
     
     a = [randint(1,1000) for i in range(1_000_000)]
-    print("\tTest [1,1000] with 1 000 000 generation")
+    print("\n\tTest [1,1000] with 1 000 000 generation")
     test_list(a)
     
     a = [randint(1,1000) for i in range(10_000_000)]
-    print("\tTest [1,1000] with 10 000 000 generation")
+    print("\n\tTest [1,1000] with 10 000 000 generation")
     test_list(a)
     
     a = [randint(1,1000) for i in range(100_000_000)]
-    print("\tTest [1,1000] with 100 000 000 generation")
+    print("\n\tTest [1,1000] with 100 000 000 generation")
     test_list(a)
     
